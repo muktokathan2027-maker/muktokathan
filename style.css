@@ -1,0 +1,99 @@
+:root {
+  --paper: #F1E8D6;
+  --paper-deep: #E9DDC4;
+  --ink: #241E19;
+  --ink-soft: #4A4038;
+  --maroon: #7A2A2E;
+  --maroon-deep: #5C1F22;
+  --meta: #8C7B65;
+  --rule: #C9B99A;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Hind Siliguri', sans-serif;
+  line-height: 1.7;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.masthead {
+  text-align: center;
+  padding: 48px 24px 32px;
+  border-bottom: 3px solid var(--ink);
+}
+.masthead .title {
+  font-family: 'Noto Serif Bengali', serif;
+  font-weight: 700;
+  font-size: clamp(52px, 11vw, 92px);
+}
+.masthead .subtitle {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--maroon-deep);
+  font-family: 'Noto Serif Bengali', serif;
+  font-style: italic;
+}
+
+nav.categories {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-deep);
+}
+nav.categories ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 14px 24px;
+}
+nav.categories a {
+  font-size: 15px;
+  color: var(--ink-soft);
+  padding: 4px 2px;
+  border-bottom: 2px solid transparent;
+}
+nav.categories a:hover {
+  color: var(--maroon);
+  border-color: var(--maroon);
+}
+
+.featured {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 56px 24px 40px;
+  border-bottom: 1px solid var(--rule);
+}
+.featured .eyebrow {
+  font-size: 14px;
+  color: var(--maroon);
+  font-family: 'Noto Serif Bengali', serif;
+  margin-bottom: 12px;
+}
+.featured h1 {
+  font-family: 'Noto Serif Bengali', serif;
+  font-weight: 600;
+  font-size: clamp(28px, 5vw, 40px);
+  margin-bottom: 16px;
+}
+.featured .byline {
+  font-size: 14px;
+  color: var(--meta);
+  margin-bottom: 18px;
+}
+.featured p.excerpt {
+  font-size: 17px;
+  color: var(--ink-soft);
+}
+
+footer {
+  border-top: 3px solid var(--ink);
+  padding: 32px 24px;
+  background: var(--paper-deep);
+  text-align: center;
+  font-size: 13px;
+  color: var(--meta);
+}
